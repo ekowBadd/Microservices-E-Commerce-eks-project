@@ -3,10 +3,10 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "bucket1" {
-  bucket = "aluruarumullaa1"
+  bucket = "ekcommbucket-dev-001"  # Changed to be unique
 
   tags = {
-    Name        = "aluruarumullaa1"
+    Name        = "ekcommbucket-dev-001"
     Environment = "dev"
   }
 }
@@ -19,10 +19,10 @@ resource "aws_s3_bucket_versioning" "bucket1_versioning" {
 }
 
 resource "aws_s3_bucket" "bucket2" {
-  bucket = "arumullaaluruu1"
+  bucket = "ekcommbucket-dev-002"  # Changed to be unique
 
   tags = {
-    Name        = "arumullaaluruu1"
+    Name        = "ekcommbucket-dev-002"
     Environment = "dev"
   }
 }
